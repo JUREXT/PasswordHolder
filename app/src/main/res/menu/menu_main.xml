@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jure_lokovsek.simplechecklist.lokovsek.example.jure_lokovsek.simplechecklist.MainActivity">
+
+
+    <item
+        android:id="@+id/action_deleteAll"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_delete_all"
+        android:title="@string/deleteAll"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_deleteAllDoneTasks"
+        android:orderInCategory="100"
+        android:title="@string/deleteAllDone"
+        android:icon="@drawable/ic_check_true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_delateAllNotDone"
+        android:orderInCategory="100"
+        android:title="@string/delateAllNotDone"
+        android:icon="@drawable/ic_check_false"
+        app:showAsAction="ifRoom" />
+
+</menu>

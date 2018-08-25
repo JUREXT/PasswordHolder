@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">Simple Checklist</string>
+    <string name="delateAllNotDone">Delete All Not Done</string>
+    <string name="deleteAllDone">Delete All Done</string>
+    <string name="deleteAll">Clear All</string>
+    <string name="done">Done!</string>
+    <string name="save">Save</string>
+    <string name="editItem">Edit item</string>
+    <string name="addItem">"Add item"</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="deleted">Deleted</string>
+    <string name="noChangeEmptyIsert">No change made, empty string!</string>
+
+</resources>
