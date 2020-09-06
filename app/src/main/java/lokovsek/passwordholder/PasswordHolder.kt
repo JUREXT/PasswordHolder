@@ -1,4 +1,4 @@
-package lokovsek.example.jure_lokovsek.simplechecklist
+package lokovsek.passwordholder
 
 open class PasswordHolder(var id: Int, var holder: String, var password: String, var created_at: Long) {
 

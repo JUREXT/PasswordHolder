@@ -8,10 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_checkjl1"
         android:supportsRtl="true"
-        android:name="lokovsek.example.jure_lokovsek.simplechecklist.PHApplication"
+        android:name="lokovsek.passwordholder.App"
         android:theme="@style/AppTheme">
         <activity
-            android:name="lokovsek.example.jure_lokovsek.simplechecklist.MainActivity"
+            android:name="lokovsek.passwordholder.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">

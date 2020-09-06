@@ -1,4 +1,4 @@
-package lokovsek.example.jure_lokovsek.simplechecklist
+package lokovsek.passwordholder
 
 import android.os.Bundle
 import android.view.Menu
