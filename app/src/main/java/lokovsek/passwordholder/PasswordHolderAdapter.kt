@@ -5,12 +5,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jurelokovsek.passwordholder.R
+import java.util.*
 
 /**
  * Created by Jure_Lokovsek on 26. 03. 2018.
  */
-class TaskAdapter : RecyclerView.Adapter<TaskAdapter.ViewHolder>() {
+class PasswordHolderAdapter : RecyclerView.Adapter<PasswordHolderAdapter.ViewHolder>() {
 
+    private var data: List<PasswordHolder> = ArrayList();
+
+    fun setData(data: List<PasswordHolder>) {
+        this.data = data;
+        notifyDataSetChanged();
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.task_list_row, parent, false)
@@ -22,7 +29,7 @@ class TaskAdapter : RecyclerView.Adapter<TaskAdapter.ViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        return 0
+        return data.size;
     }
 
     //    public TaskAdapter(MainActivity activity, @Nullable OrderedRealmCollection<PasswordHolder> data) {

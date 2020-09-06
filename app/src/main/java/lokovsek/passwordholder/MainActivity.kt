@@ -1,17 +1,27 @@
 package lokovsek.passwordholder
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.jurelokovsek.passwordholder.R
+import com.jurelokovsek.passwordholder.databinding.ActivityMainBinding
+
+// TODO: ref -> https://www.youtube.com/watch?v=ZkROXHrlugs&ab_channel=LemubitAcademy
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        var viewBinding = ActivityMainBinding.inflate(layoutInflater);
+        setContentView(viewBinding.root)
 
-        // ActivityMainBinding.inflate()
+        viewBinding.fab.setOnClickListener(View.OnClickListener {
+            Log.d("Main", "This is main")
+
+        });
 
 //        listView =(ListView)findViewById(R.id.task_list);
 //        context = MainActivity.this;
@@ -88,6 +98,10 @@ class MainActivity : AppCompatActivity() {
 //                dialog.show();
 //            }
 //        });
+    }
+
+    private fun test() {
+        
     }
 
     //    private void changeTaskName(final String id, final String name){
