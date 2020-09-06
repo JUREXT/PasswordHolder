@@ -1,6 +1,6 @@
 package lokovsek.example.jure_lokovsek.simplechecklist;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
